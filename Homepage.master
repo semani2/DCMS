@@ -1,0 +1,147 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Homepage.master.cs" Inherits="Homepage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style7
+        {
+            width: 173%;
+            height: 416px;
+            margin-right: 261px;
+        }
+        .style8
+        {
+            height: 187px;
+            width: 647px;
+        }
+        .style9
+        {
+            height: 25px;
+            width: 647px;
+        }
+        .style10
+        {
+            width: 647px;
+        }
+        .style12
+        {
+            height: 229px;
+            width: 647px;
+        }
+        .style13
+        {
+            width: 126%;
+            height: 229px;
+        }
+        .style14
+        {
+            width: 140px;
+        }
+        .style15
+        {
+            font-family: "Comic Sans MS";
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table class="style7">
+            <tr style="border-bottom-style: solid; border-bottom-width: medium; border-bottom-color: #008000">
+                <td class="style8">
+                    <h1 style="width: 1152px; height: 148px">
+                        <span class="style15">&nbsp;&nbsp;&nbsp;
+                        <asp:Image ID="Image1" runat="server" Height="114px" 
+                            ImageUrl="~/twitter-logo.png" Width="128px" />
+&nbsp;&nbsp;&nbsp; DIGITAL COLLEGE MANAGEMENT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </span>
+                    </h1>
+                    <p dir="ltr" style="font-weight: 700; width: 1151px; background-color: #666666">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:HyperLink ID="HyperLink1" runat="server" Font-Bold="True" 
+                            Font-Size="Large" BorderStyle="None" 
+                            NavigateUrl="~/Home.aspx">HOME</asp:HyperLink>
+&nbsp;|
+                        <asp:HyperLink ID="HyperLink2" runat="server" Font-Size="Large" 
+                            Font-Strikeout="False" NavigateUrl="~/Aboutus.aspx">ABOUT US</asp:HyperLink>
+&nbsp;|
+                        <asp:HyperLink ID="HyperLink3" runat="server" Font-Bold="True" 
+                            Font-Size="Large" NavigateUrl="~/Login.aspx">LOGIN</asp:HyperLink>
+&nbsp;|
+                        <asp:HyperLink ID="HyperLink4" runat="server" Font-Bold="True" 
+                            Font-Size="Large" NavigateUrl="~/Productdemo.aspx">PRODUCT DEMO</asp:HyperLink>
+&nbsp;|
+                        <asp:HyperLink ID="HyperLink5" runat="server" Font-Bold="True" 
+                            Font-Size="Large" NavigateUrl="~/Contactus.aspx">CONTACT US</asp:HyperLink>
+&nbsp;|
+                        <asp:HyperLink ID="HyperLink6" runat="server" Font-Bold="True" 
+                            Font-Size="Large" NavigateUrl="~/Feedback.aspx">FEEDBACK</asp:HyperLink>
+                    &nbsp;</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="style9">
+                    <asp:SiteMapPath ID="SiteMapPath1" runat="server">
+                    </asp:SiteMapPath>
+                    <br />
+                    <hr align="left" style="width: 873px; height: -15px" />
+                </td>
+            </tr>
+            <tr>
+                <td class="style12">
+                    <table class="style13">
+                        <tr>
+                            <td class="style14" align="justify">
+                                &nbsp;<asp:TreeView 
+                                    ID="TreeView1" runat="server" 
+                                    DataSourceID="SiteMapDataSource1" Height="200px"
+                                     Width="195px" BorderStyle="None" ExpandDepth="9" 
+                                    Font-Names="Comic Sans MS" Font-Size="Large" ImageSet="BulletedList" 
+                                    ShowLines="True">
+                                    <HoverNodeStyle Font-Underline="True" ForeColor="#5555DD" />
+                                    <NodeStyle Font-Names="Tahoma" Font-Size="10pt" ForeColor="Black" 
+                                        HorizontalPadding="5px" NodeSpacing="0px" VerticalPadding="0px" />
+                                    <ParentNodeStyle Font-Bold="False" />
+                                    <RootNodeStyle BackColor="#CCCCCC" />
+                                    <SelectedNodeStyle BackColor="#66CCFF" Font-Underline="True" 
+                                        ForeColor="#5555DD" HorizontalPadding="0px" VerticalPadding="0px" />
+                                </asp:TreeView>
+                            </td>
+                            <td id="content">
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                    <p>
+                                        &nbsp;</p>
+                                </asp:ContentPlaceHolder>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="style14">
+                                &nbsp;</td>
+                            <td id="content">
+                                &nbsp;</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="style10" bgcolor="White">
+                    &nbsp;&nbsp;<br />
+                    <hr align="left" style="width: 875px; height: -15px" />
+                    &nbsp;Copyright 
+                    <asp:Label ID="Label1" runat="server" Text="&amp;copy;"></asp:Label>
+                    &nbsp; 2012.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:HyperLink ID="HyperLink7" 
+                        runat="server" NavigateUrl="~/Credits.aspx">CREDITS</asp:HyperLink>
+                    &nbsp;&nbsp;&nbsp;&nbsp; | Terms |&nbsp; help&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                </td>
+            </tr>
+        </table>
+    </div>
+    <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+    </form>
+</body>
+</html>
